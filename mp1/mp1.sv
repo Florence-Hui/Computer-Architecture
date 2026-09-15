@@ -25,12 +25,12 @@ module top (
 
     always_comb begin
         case (state)
-            3'd0:    {RGB_R, RGB_G, RGB_B} = 3'b011; // RED:     R ON
-            3'd1:    {RGB_R, RGB_G, RGB_B} = 3'b001; // YELLOW:  R+G ON
-            3'd2:    {RGB_R, RGB_G, RGB_B} = 3'b101; // GREEN:   G ON
-            3'd3:    {RGB_R, RGB_G, RGB_B} = 3'b100; // CYAN:    G+B ON
-            3'd4:    {RGB_R, RGB_G, RGB_B} = 3'b110; // BLUE:    B ON
-            3'd5:    {RGB_R, RGB_G, RGB_B} = 3'b010; // MAGENTA: R+B ON
+            3'd0:    {RGB_R, RGB_G, RGB_B} = 3'b011; // RED
+            3'd1:    {RGB_R, RGB_G, RGB_B} = 3'b001; // YELLOW
+            3'd2:    {RGB_R, RGB_G, RGB_B} = 3'b101; // GREEN
+            3'd3:    {RGB_R, RGB_G, RGB_B} = 3'b100; // CYAN
+            3'd4:    {RGB_R, RGB_G, RGB_B} = 3'b110; // BLUE
+            3'd5:    {RGB_R, RGB_G, RGB_B} = 3'b010; // MAGENTA
             default: {RGB_R, RGB_G, RGB_B} = 3'b111; // All OFF
         endcase
     end
